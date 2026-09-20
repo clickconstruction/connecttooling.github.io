@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/moved.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -294,9 +295,6 @@
                     <p>&copy; 2025 ConnectTooling. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white me-3">Privacy Policy</a>
-                    <a href="#" class="text-white me-3">Terms of Service</a>
-                    <a href="#" class="text-white">Support</a>
                 </div>
             </div>
         </div>
@@ -305,5 +303,21 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // What the announcement says. Every line on the right must be something ClickTooling really does.
+        // GPS tracking is deliberately NOT carried over: ClickTooling records where a phone was at
+        // clock-in and clock-out, which is not fleet or delivery tracking.
+        window.MOVED_TO_CLICKTOOLING = {
+            name: 'ConnectTooling',
+            lede: 'ConnectTooling was built and run in the field by Click Plumbing and Electrical. The parts that earned their keep were folded into ClickTooling \u2014 the platform Click runs its whole operation on \u2014 and that is where they are developed now.',
+            features: [
+                ['Team messaging', 'The Inbox, and one conversation per job'],
+                ['Document sharing', 'Job photos and documents, filed on the job they belong to'],
+                ['Push notifications', 'Push notifications for the things that need you'],
+                ['Customer updates', 'A customer portal that shows each customer their own job']
+            ]
+        };
+    </script>
+    <script src="js/moved.js"></script>
 </body>
 </html>
